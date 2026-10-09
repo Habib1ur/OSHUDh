@@ -1,32 +1,78 @@
-# React + TypeScript + Vite
+# Oshudh Healthcare
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Oshudh is a modern healthcare e-commerce storefront built with React, Vite, TypeScript, and Tailwind CSS. The app is designed to feel like a polished digital pharmacy and wellness platform with medicine browsing, prescription support, doctor consultation, lab tests, cart flow, and account management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive healthcare storefront UI
+- Search and category-based shopping
+- Product cards with pricing and stock details
+- Cart and checkout experience
+- Prescription upload workflow
+- Doctor consultation and specialist listing
+- Lab test catalog and detail pages
+- FAQ and support sections
+- Account registration and user account views
+- Order history and confirmation flow
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- Zustand
+- TanStack Query
+- Lucide React
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Install dependencies
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Run locally
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in the terminal, usually:
+
+```bash
+http://localhost:5173
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```bash
+src/
+  App.tsx
+  components/
+  data/
+  lib/
+  store/
+  types.ts
+public/
+index.html
+README.md
+package.json
+vite.config.ts
+```
+
+## Notes
+
+This project uses realistic demo healthcare data to simulate an e-commerce and care experience suitable for frontend presentation, prototype work, and production-style UX testing.
+
+## License
+
+This project is intended for educational and demonstration use.
