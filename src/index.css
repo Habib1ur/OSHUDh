@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #13865b;
+  --color-primary-hover: #0e704a;
+  --color-primary-soft: #eaf7f0;
+  --color-page: #f6f8f7;
+  --color-surface: #ffffff;
+  --color-text: #17211c;
+  --color-text-secondary: #66736b;
+  --color-border: #e2e8e4;
+  --color-success: #16804a;
+  --color-warning: #a15c07;
+  --color-danger: #c93636;
+  --shadow-soft: 0 18px 40px -28px rgba(23, 33, 28, 0.22);
+  --radius-card: 12px;
+  --radius-panel: 16px;
+  --radius-button: 10px;
+  font-family: "Inter", "Noto Sans Bengali", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 1rem;
+  background: var(--color-page);
+  color: var(--color-text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease,
+    color 150ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(19, 134, 91, 0.18);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edf3ef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(19, 134, 91, 0.33);
+  border-radius: 9999px;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    @apply text-[color:var(--color-text)] antialiased;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-[color:var(--color-text)] m-0;
+  }
+
+  p {
+    @apply m-0;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 15px;
+    }
+  }
+}
+
+@layer utilities {
+  .section-shell {
+    @apply rounded-[24px] border border-[color:var(--color-border)] bg-[color:var(--color-surface)] shadow-[var(--shadow-soft)];
+  }
+
+  .soft-card {
+    @apply rounded-[12px] border border-[color:var(--color-border)] bg-[color:var(--color-surface)] shadow-[0_12px_30px_-24px_rgba(23,33,28,0.18)];
+  }
+}

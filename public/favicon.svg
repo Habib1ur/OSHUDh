@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Oshudh doctor icon favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#17b77d"/>
+      <stop offset="100%" stop-color="#0b7a5b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#bg)"/>
+  <circle cx="32" cy="23" r="12" fill="#ffffff" opacity="0.95"/>
+  <path d="M18 50c1.6-8 7.5-12 14-12s12.4 4 14 12" fill="#ffffff" opacity="0.96"/>
+  <path d="M32 17v12M26 23h12" stroke="#0b7a5b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 50c1.8-7.2 7.6-10.8 14-10.8S44.2 42.8 46 50" fill="none" stroke="#0b7a5b" stroke-width="2.7" stroke-linecap="round" opacity="0.75"/>
+</svg>
